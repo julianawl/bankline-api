@@ -1,6 +1,9 @@
 package com.julianawl.dio.bankline.api.model;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -9,6 +12,7 @@ public class Movimentacao {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
 	@Column(name = "data_hora")
     private LocalDateTime dataHora;
     private String descricao;
@@ -28,6 +32,7 @@ public class Movimentacao {
         this.id = id;
     }
 
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     public LocalDateTime getDataHora() {
         return dataHora;
     }

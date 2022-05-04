@@ -6,12 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.julianawl.dio.bankline.api.dto.NovaMovimentacao;
-import com.julianawl.dio.bankline.api.dto.NovoCorrentista;
-import com.julianawl.dio.bankline.api.model.Correntista;
 import com.julianawl.dio.bankline.api.model.Movimentacao;
-import com.julianawl.dio.bankline.api.repository.CorrentistaRepository;
 import com.julianawl.dio.bankline.api.repository.MovimentacaoRepository;
-import com.julianawl.dio.bankline.api.services.CorrentistaService;
 import com.julianawl.dio.bankline.api.services.MovimentacaoService;
 
 @RestController

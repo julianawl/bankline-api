@@ -7,6 +7,7 @@ public class NovaMovimentacao {
 	private Double valor;
 	private MovimentacaoTipo tipo;
 	private Integer idConta;
+	
 	public String getDescricao() {
 		return descricao;
 	}
