@@ -35,4 +35,8 @@ public class MovimentacaoController {
 		service.save(movimentacao);
 	}
 
+	@GetMapping("/{idConta}")
+	public List<Movimentacao> findAll(@PathVariable("idConta") Integer idConta){
+		return repository.findByIdConta(idConta);
+	}
 }
